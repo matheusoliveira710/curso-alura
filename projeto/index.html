@@ -14,7 +14,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="img/logo-tecboard-branco.png" alt="Logo Tecboard na cor preta">
+                <img id="logo-img" src="img/logo-tecboard-branco.png" alt="Logo Tecboard">
             </div>
             <button id="theme-toggle">
                 ☀️
@@ -35,9 +35,20 @@
     </main>
     <script>
         const button = document.getElementById("theme-toggle");
+        const logo = document.getElementById("logo-img");
+
         button.addEventListener("click", () =>
         {
             document.body.classList.toggle("light-mode");
+
+            // Verifica se a classe light-mode está ativa no body
+            if (document.body.classList.contains("light-mode")) {
+                logo.src = "img/logo-tecboard-preto.png"; // Logo para tema claro
+                button.textContent = "🌙"; // Altera o ícone do botão
+            } else {
+                logo.src = "img/logo-tecboard-branco.png"; // Logo para tema escuro
+                button.textContent = "☀️"; // Altera o ícone do botão
+            }
         });
     </script>
 </body>
