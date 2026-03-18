@@ -1,7 +1,6 @@
 @font-face {
     font-family: "Unbounded";
-    src: url(../fonts/Unbounded-Bold.ttf)
-    format("truetype");
+    src: url('../fonts/Unbounded-Bold.ttf') format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -9,8 +8,7 @@
 
 @font-face {
     font-family: "Poppins";
-    src: url(../fonts/Poppins-Regular.ttf)
-    format("truetype");
+    src: url('../fonts/Poppins-Regular.ttf') format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -20,12 +18,14 @@
 :root {
     --bg-color: #0E1014;
     --text-color: #FFFFFF;
+    --logo-image: url('../img/logo-dark.svg'); /* Logo para o tema escuro */
 }
 
 /* Quando a classe light-mode for ativada, as variáveis mudam de cor */
 .light-mode {
     --bg-color: #FFFFFF;
     --text-color: #000000;
+    --logo-image: url('../img/logo-light.svg'); /* Logo para o tema claro */
 }
 
 * {
@@ -39,7 +39,12 @@ section span{
 }
 
 .logo {
-    background-size: auto;
+    width: 200px; /* Ajuste a largura do seu logo */
+    height: 45px; /* Ajuste a altura do seu logo */
+    background-image: var(--logo-image);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 section h1 {
