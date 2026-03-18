@@ -118,3 +118,44 @@ body {
     background-color: black;
     color: white;
 }
+
+/* =========================================
+   Responsividade (Media Queries)
+========================================= */
+
+/* Para tablets e telas médias (até 1024px) */
+@media (max-width: 1024px) {
+    section h1 {
+        font-size: 60px;
+    }
+    section p {
+        font-size: 24px;
+    }
+    .hero img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+    }
+}
+
+/* Para celulares e telas pequenas (até 768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 0;
+    }
+    .header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    section h1 {
+        font-size: 40px;
+    }
+    section p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .btn-demo {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
