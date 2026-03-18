@@ -16,9 +16,22 @@
     font-display: swap;
 }
 
+/* Definindo as variáveis para o tema padrão (Escuro) */
+:root {
+    --bg-color: #0E1014;
+    --text-color: #FFFFFF;
+}
+
+/* Quando a classe light-mode for ativada, as variáveis mudam de cor */
+.light-mode {
+    --bg-color: #FFFFFF;
+    --text-color: #000000;
+}
+
 * {
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave para todas as trocas de cor */
 }
 
 section span{
@@ -30,7 +43,7 @@ section span{
 }
 
 section h1 {
-    color: #FFFFFF;
+    color: var(--text-color);
     font-size: 85px;
     font-family: "Unbounded", sans-serif;
     font-optical-sizing: auto;
@@ -41,12 +54,11 @@ section h1 {
 }
 
 section p {
-    color: gray;
     font-size: 32px;
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
-    color: #FFFFFF;
+    color: var(--text-color);
     line-height: 35px;
 }
 
@@ -62,7 +74,7 @@ section p {
 }
 
 a {
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .hero img {
@@ -91,7 +103,8 @@ a {
 }
 
 body {
-    background-color: #0E1014;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .header .container{
@@ -110,14 +123,6 @@ body {
     padding: 50px 0;
 }
 
-.light-mode {
-    background-color: white;
-    color: black;
-}
-.dark-mode {
-    background-color: black;
-    color: white;
-}
 
 /* =========================================
    Responsividade (Media Queries)
