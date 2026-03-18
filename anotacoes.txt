@@ -1,0 +1,161 @@
+Aula sobre criar elementos e passar as cores para tags do HTML
+
+criei o elemento .cor-branca do seguinte modo, para as tags H1(título), p(parágrafo), e a(links):
+
+.cor-branca{
+  color: #FFFFFF;
+}
+
+Resetar o estilo do CSS que vem por padrão do navegador
+
+Um reset básico pode ser feito com algumas poucas linhas:
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+Exemplo de Reset CSS mais completo
+
+Também existem resets mais extensos, que padronizam muito mais propriedades. Um exemplo clássico é o de Eric Meyer:
+
+/* Reset CSS de Eric Meyer - versão reduzida */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+Esse reset limpa praticamente todas as diferenças entre navegadores, criando uma base totalmente "neutra".
+
+Comparativo entre abordagens, vantagens e desvantagens
+
+Abordagem 
+
+O que faz?
+
+* Reset tradicional:
+
+Remove todos os estilos padrões do navegador (margens, paddings, fontes etc...)
+
+Vantagens
+
+Base totalmente limpa, sem interferências externas
+
+Desvantagens
+
+Pode ser agressivo demais, removendo estilos necessários e úteis
+
+Abordagem 
+
+O que faz?
+
+* Normalize.css:
+
+Harmoniza estilos entre navegadores antes de limpar tudo.
+
+Vantagens
+
+Mantém estilos considerados boas práticas (ex: botões, inputs)
+
+Desvantagens
+
+Arquivo maior que um reset simples
+
+Abordagem 
+
+O que faz?
+
+* Reset Customizado:
+
+Criação Manual de um conjunto mínimo de resets.
+
+Vantagens
+
+Flexibilidade, apenas o que é necessário é ajustado
+
+Desvantagens
+
+Exige análise e manutenção constante
+
+O importante é entender que o Reset CSS garante consistência visual e previsibilidade, facilitando a vida na hora de construir interfaces responsivas e compatíveis em diferentes navegadores.
+
+Tipos de Fontes:
+
+font-family: serif;
+font-family: sans-serif;
+font-family: monospace;
+font-family: cursive;
+font-family: fantasy;
+
+Configurar as classes do HTML no CSS (Canding Style Sheet - Folhas de estilo em cascata)
+
+.hero {} - classe
+#btn-demo {} - id 
+section {} - tag 
+
+Explorando tipos de fontes de sistema
+
+As fontes de sistema possuem alguns tipos principais. Vamos aumentar o tamanho da nossa tag H1 para 70 pixels, facilitando a compreensão. 
+
+h1 {
+    font-size: 70px;
+}
+
+A primeira família de fonte é a Serif, caracterizada por acabamentos mais finos e curvas nas letras, como as pontas na letra U. Essa é uma fonte do tipo Serifada.
+
+h1 {
+  font-size: 70px;
+  font-family: serif;
+}
+
+Se não definirmos nada no CSS, o navegador aplicará automaticamente uma fonte do sistema que considera adequada. Podemos verificar isso inspecionando o elemento H1 e acessando a aba Computed, onde é possível filtrar as propriedades aplicadas ao elemento. O navegador pode aplicar, por exemplo, a fonte Times, que faz parte da família Serif.
+Comparando fontes Sans Serif e Monospace
+
+O próximo tipo de fonte de sistema é a Sans Serif, que é mais reta e não possui tantos detalhes de acabamento quanto a Serif. É uma fonte mais sóbria e neutra, facilitando a leitura, sendo frequentemente utilizada em sistemas e sites.
+
+h1 {
+  font-size: 70px;
+  font-family: sans-serif;
+}
+
+Outra família de fontes é a Monospace, ou monoespaçada, geralmente usada para escrita de código e em terminais.
+
+h1 {
+  font-size: 70px;
+  font-family: monospace;
+}
+
+Explorando fontes cursivas e decorativas
+
+A fonte cursiva, ou Family Cursive, imita a escrita manuscrita, com mais curvas e acabamentos, sendo utilizada para imitar caligrafia em algumas situações.
+
+h1 {
+  font-size: 70px;
+  font-family: cursive;
+}
+
+Por fim, a família de fonte Fantasy é mais decorativa, no estilo papiro, e geralmente usada para títulos e efeitos.
+
+h1 {
+  font-size: 70px;
+  font-family: fantasy;
+}
+
