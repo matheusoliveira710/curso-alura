@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Unbounded";
-    src: url('../fonts/Unbounded-Bold.ttf') format("truetype");
+    src: url('../fonts/Unbounded-Bold.ttf') 
+    format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -8,7 +9,8 @@
 
 @font-face {
     font-family: "Poppins";
-    src: url('../fonts/Poppins-Regular.ttf') format("truetype");
+    src: url('../fonts/Poppins-Regular.ttf') 
+    format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -49,7 +51,7 @@ section span{
 
 section h1 {
     color: var(--text-color);
-    font-size: 85px;
+    font-size: 60px;
     font-family: "Unbounded", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
@@ -59,7 +61,7 @@ section h1 {
 }
 
 section p {
-    font-size: 32px;
+    font-size: 22px;
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -128,12 +130,6 @@ body {
     padding: 50px 0;
 }
 
-
-/* =========================================
-Responsividade (Media Queries)
-========================================= */
-
-/* Para tablets e telas médias (até 1024px) */
 @media (max-width: 1024px) {
     section h1 {
         font-size: 60px;

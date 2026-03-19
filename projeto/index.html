@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,11 +36,9 @@
     <script>
         const button = document.getElementById("theme-toggle");
         const logo = document.getElementById("logo-img");
-
         button.addEventListener("click", () =>
         {
             document.body.classList.toggle("light-mode");
-
             // Verifica se a classe light-mode está ativa no body
             if (document.body.classList.contains("light-mode")) {
                 logo.src = "img/logo-tecboard-preto.png"; // Logo para tema claro
