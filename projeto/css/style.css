@@ -51,7 +51,7 @@ section span{
 
 section h1 {
     color: var(--text-color);
-    font-size: 60px;
+    font-size: 64px;
     font-family: "Unbounded", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
@@ -61,7 +61,7 @@ section h1 {
 }
 
 section p {
-    font-size: 22px;
+    font-size: 24px;
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -142,7 +142,6 @@ body {
         max-width: 800px;
         height: auto;
     }
-}
 
 /* Para celulares e telas pequenas (até 768px) */
 @media (max-width: 768px) {
@@ -164,4 +163,5 @@ body {
         padding: 12px 30px;
         font-size: 16px;
     }
+}
 }
