@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon-tecboard-roxo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <title>Tecboard</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo-tecboard-branco.png" alt="Logo Tecboard na cor preta">
+            </div>
+            <button id="theme-toggle">
+                ☀️
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+            <h1><span>Fique de olho</span> <br>no que importa</h1>
+            <p>Monitoramento em tempo real com alertas inteligentes para sua <br>aplicação nunca sair do ar sem você saber.</p>
+            <br>
+            <a href="#" class="btn-demo">Testar Versão Demo</a>
+            <br>
+            <img src="img/celular-desktop.png" alt="Dois celulares pretos sobrepostos com uma sombra roxa sobre eles">
+            </div>
+        </section>
+    </main>
+    <script>
+        const button = document.getElementById("theme-toggle");
+        button.addEventListener("click", () =>
+        {
+            document.body.classList.toggle("light-mode");
+        });
+    </script>
+</body>
+</html>
