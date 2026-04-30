@@ -1,3 +1,4 @@
+/* Definição de Fontes */
 @font-face {
     font-family: "Unbounded";
     src: url('../fonts/Unbounded-Bold.ttf') 
@@ -30,11 +31,15 @@
     --logo-image: url('../img/logo-light.svg'); /* Logo para o tema claro */
 }
 
+/* Reset */
+
 * {
     margin: 0;
     padding: 0;
     transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave para todas as trocas de cor */
 }
+
+/* Estilo Desktop */
 
 section span{
     color: #9747FF;
@@ -67,6 +72,7 @@ section p {
     font-weight: bold;
     color: var(--text-color);
     line-height: 35px;
+    margin-top: 24px;
 }
 
 #section img {
@@ -102,7 +108,7 @@ a {
     font-weight: 600px;
     color: white;
     text-decoration: none;
-    background: linear-gradient(90deg, #7B3EF4, #9747FF);
+    background: linear-gradient(90deg, #7B3EF4, #9747FF, #8233E8);
     border-radius: 50px;
     transition: 0.3s;
 }
@@ -128,12 +134,20 @@ body {
     padding: 50px 0;
 }
 
-@media (max-width: 1024px) {
+/* Para tablets (até 768px) */
+
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(54, 54, 110);
+    }
     section h1 {
         font-size: 60px;
     }
     section p {
         font-size: 24px;
+    }
+    section span {
+        color: red;
     }
     .hero img {
         width: 100%;
@@ -141,8 +155,13 @@ body {
         height: auto;
     }
 }
-/* Para celulares e telas pequenas (até 768px) */
-@media (max-width: 768px) {
+
+/* Para celulares e telas pequenas (até 375px) */
+
+@media (max-width: 375px) {
+    body {
+        background-color: red;
+    }
     .header {
         padding: 20px 0;
     }
@@ -152,6 +171,9 @@ body {
     }
     section h1 {
         font-size: 40px;
+    }
+    section span {
+        color: rgb(57, 57, 117);
     }
     section p {
         font-size: 18px;
